@@ -9,8 +9,8 @@ public class Denomination {
     }
 
     Denomination times(int num){
-        amount *= num;
-        return null;
+
+        return new Denomination(amount * num);
     }
 
 }
