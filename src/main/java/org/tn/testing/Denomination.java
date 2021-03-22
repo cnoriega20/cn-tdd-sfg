@@ -9,7 +9,7 @@ public class Denomination {
     }
 
     void times(int num){
-        amount = amount * 2;
+        amount *= num;
     }
 
 }
