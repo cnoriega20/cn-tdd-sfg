@@ -33,7 +33,7 @@ public class AppTest {
         void testCalcOne()
         {
             System.out.println("======TEST ONE EXECUTED=======");
-            
+
         }
 
         @Test
