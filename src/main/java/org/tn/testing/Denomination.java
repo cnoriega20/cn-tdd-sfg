@@ -8,8 +8,9 @@ public class Denomination {
         this.amount = amount;
     }
 
-    void times(int num){
+    Denomination times(int num){
         amount *= num;
+        return null;
     }
 
 }
