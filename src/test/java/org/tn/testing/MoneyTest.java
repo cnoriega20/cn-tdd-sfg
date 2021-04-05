@@ -13,4 +13,10 @@ public class MoneyTest {
         product = denomination.times(3);
         assertEquals(15, product.amount);
     }
+
+    @Test
+    void testEquality(){
+        assertEquals(new Denomination(5), new Denomination(5));
+    }
+
 }
