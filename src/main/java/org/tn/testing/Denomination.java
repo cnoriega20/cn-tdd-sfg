@@ -5,6 +5,7 @@ public class Denomination {
 
     public boolean equals(Object object){
         Denomination d = (Denomination) object;
-        return amount == d.amount;
+        return amount == d.amount
+                 && this.getClass().equals(object.getClass());
     }
 }
