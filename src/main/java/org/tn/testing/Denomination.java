@@ -13,4 +13,8 @@ public class Denomination {
         return new Denomination(amount * num);
     }
 
+    public boolean equals(Object object){
+        Denomination d = (Denomination) object;
+        return amount == d.amount;
+    }
 }
