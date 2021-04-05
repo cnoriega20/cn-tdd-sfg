@@ -10,9 +10,9 @@ public class MoneyTest {
     void testMult(){
         Denomination  denomination = new Denomination(5);
         Denomination product = denomination.times(2);
-        assertEquals(10, product.amount);
+        assertEquals(new Denomination(10), product);
         product = denomination.times(3);
-        assertEquals(15, product.amount);
+        assertEquals(new Denomination(15), product);
     }
 
     @Test
