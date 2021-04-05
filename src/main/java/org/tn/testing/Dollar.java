@@ -1,8 +1,7 @@
 package org.tn.testing;
 
-public class Dollar {
+public class Dollar extends Denomination{
 
-    private int amount;
 
     public Dollar(int amount) {
         this.amount = amount;
@@ -13,8 +12,4 @@ public class Dollar {
         return new Dollar(amount * num);
     }
 
-    public boolean equals(Object object){
-        Dollar d = (Dollar) object;
-        return amount == d.amount;
-    }
 }
