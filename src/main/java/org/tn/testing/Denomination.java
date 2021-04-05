@@ -1,8 +1,9 @@
 package org.tn.testing;
 
-public class Denomination {
+public abstract class Denomination {
     protected  int amount;
 
+    public abstract Denomination times(int multiplier);
     public static Dollar createDollar(int amount){
         return new Dollar(amount);
     }

@@ -7,7 +7,7 @@ public class Dollar extends Denomination{
         this.amount = amount;
     }
 
-    Denomination times(int num){
+    public Denomination times(int num){
 
         return new Dollar(amount * num);
     }

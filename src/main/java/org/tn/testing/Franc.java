@@ -6,7 +6,7 @@ public class Franc extends Denomination{
         this.amount = amount;
     }
 
-    Denomination times( int multiplier) {
+    public Denomination times( int multiplier) {
         return new Franc(amount * multiplier);
     }
 }
