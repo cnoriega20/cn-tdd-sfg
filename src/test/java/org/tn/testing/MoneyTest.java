@@ -3,6 +3,7 @@ package org.tn.testing;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MoneyTest {
     @Test
@@ -17,6 +18,7 @@ public class MoneyTest {
     @Test
     void testEquality(){
         assertEquals(new Denomination(5), new Denomination(5));
+        assertNotEquals(new Denomination(5), new Denomination(8));
     }
 
 }
